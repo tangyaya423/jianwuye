@@ -1,0 +1,9 @@
+<!--life_pay/life_pay.wxml-->
+<view class='life_container'>
+  <view class='life_pay_top' wx:for="{{life_top}}">
+      <text class='history_account'>历史账号</text>
+      <text class='manage'>管理</text>
+      <text class='account'>电费：{{item.account}}</text>
+      
+  </view>
+</view>

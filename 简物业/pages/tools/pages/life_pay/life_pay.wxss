@@ -1,0 +1,27 @@
+/* life_pay/life_pay.wxss */
+.life_container{
+  margin: 0 auto;
+  border: 1rpx solid red;
+}
+.life_pay_top{
+  width: 100%;
+  border: 1rpx solid red;
+  margin: 0 auto;
+}
+.history_account,.manage{
+  height: 60rpx;
+  width: 45%;
+  float: left;
+  padding: 0 2%;
+  border: 1rpx solid black;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  color: #999999;
+}
+.manage{
+  text-align: right;
+  color: #576b95;
+}
+.account{
+  
+}

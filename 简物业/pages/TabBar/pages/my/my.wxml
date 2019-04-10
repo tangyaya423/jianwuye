@@ -1,0 +1,22 @@
+<view class='my_container'>
+<view class='my_top' wx:for='{{mydata}}'>
+  <image class='my_photo' src='{{item.image}}'></image>
+  <view class='my_message'>
+    <text class='my_name'>{{item.name}}</text>
+    <text class='my_phone'>{{item.phone}}</text>
+  </view>
+  <button class='change' type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="primary"> 修改资料 </button>
+ <view class='other' wx:for='{{otherm}}'>
+   <text class='monery'>余额：{{item.monery}}　　|　　</text>
+  <text class='score'>积分：{{item.score}}　　|　　  </text>
+  <text class='monery1'>代金券：{{item.monery1}}</text> 
+ </view> 
+</view>
+<block  wx:for='{{middledata}}'>
+<view class='middle'>
+  <image src='{{item.pic}}'></image>
+  <text class='notice'>{{item.content}}</text>
+</view>
+</block>
+</view>

@@ -1,0 +1,197 @@
+/**index.wxss**/
+.container{
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+.chuang{
+  height: 360rpx;
+  width: 100%;
+  margin:0 auto;
+}
+ .pic{
+  height: 100%;
+  width: 100%;
+  float: left;
+}
+.tool{
+  width: 100%;
+  float: left;
+}
+.f_tool,.message{
+  height: 30rpx;
+  width: 100%;
+  float: left;
+  text-align: center;
+
+}
+.pic1,.pic2{
+  float: left;
+  height: 50rpx;
+  width: 60rpx;
+}
+.f_tool text,.message text{
+  display: inline-block;
+  color: #606060;
+  text-align: center;
+   font-size: 32rpx;
+} 
+.list_tool{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  float: left;
+  margin-top: 20rpx;
+}
+.tool_top{
+    height: 115rpx;
+    width: 19.3%;
+    float: left;
+    padding-top: 5rpx;
+}
+.tool_bottom{
+    margin-top: 30rpx;
+ }
+.tool_pic{
+  display: block;
+  width: 65rpx;
+  height: 65rpx;
+  float: left;
+  margin-left: 38rpx;
+}
+.tool_name{
+  display: block;
+  float: left;
+  font-size: 27rpx;
+  margin-top: 10rpx;
+  margin-left: 8px;
+  letter-spacing: 2rpx;
+  color: #6c6c6c;
+}
+.message_box{
+  width: 100%;
+  height: 100%;
+  float: left;
+}
+.zixun{
+  float: left;
+  width: 48%;
+}
+.title{
+  height: 100%;
+  width: 100%;
+  float:left;
+}
+.word{
+  height: 55rpx;
+  padding-top: 10rpx;
+  display: block;
+  line-height:55rpx;
+  margin-left: 75rpx;
+  color: #656565;
+  float: left;
+}
+.zixun image{
+  height: 35rpx;
+  width: 35rpx;
+  float: left;
+  margin-left: 15rpx;
+  margin-top: 15rpx;
+}
+.fengexian{
+  width: 80%;
+  margin: auto;
+  border: 1rpx dashed #656565;
+  float: left;
+  margin-left:35rpx;
+
+}
+.notice{
+  width: 100%;
+  float: left;
+  margin-top: 0rpx;
+}
+.notice image{
+  height: 30rpx;
+  width: 30rpx;
+  float: left;
+}
+.title1{
+  width: 80%;
+  color: #606060;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.title2{
+  display: block;
+  color: #606060;
+  font-size: 30rpx;
+  font-weight: bold;
+  float: left;
+  margin-top: 10rpx;
+  margin-left: 10%;
+}
+.content{
+  display: block;
+  margin-top: 7rpx;
+  width: 90%;
+  color: #606060;
+  float: left;
+  margin-left: 10%;
+  font-size: 30rpx;
+  line-height: 35rpx;
+}
+.quan{
+  height: 100%;
+  width: 50.5%;
+  float: right;
+  margin-right: 1.5%;
+}
+.quan_pic{
+  height: 55rpx;
+  width: 55rpx;
+  float: left;
+}
+.quan_message{
+  height: 100%;
+  width: 100%;
+  float:right;
+  margin-top: 15rpx;
+}
+.quan_pic1{
+  height: 35rpx;
+  width: 35rpx;
+}
+.quan_centent{
+  float:right;
+  width: 89%;
+}
+.content1{
+  width: 100%;
+  color: #606060;
+  display: block;
+   font-size: 30rpx; 
+    line-height: 35rpx;
+}
+.quan_pic2{
+  height: 230rpx;
+  width: 100%;
+  margin-top: 15rpx;
+  float: right;
+}
+.share{
+  height: 35rpx;
+  width: 100%;
+  float: left;
+  margin-top: 10rpx;
+}
+.share0{
+  height: 100%;
+  width: 10%;
+  float: left;
+}
+.share image{
+  height: 100%;
+  width: 8%;
+  float: left;
+}

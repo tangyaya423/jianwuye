@@ -1,0 +1,60 @@
+{
+  "pages":[
+    "pages/TabBar/pages/index/index",
+    "pages/tools/pages/life_pay/life_pay",
+    "pages/TabBar/pages/quan/quan",
+    "pages/TabBar/pages/my/my",
+    "pages/TabBar/pages/publish/publish"
+  ], 
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "简物业",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+   "color": "#a9b7b7",
+   "selectedColor": "#55a9d6",
+   "borderStyle": "black",
+   "list": [
+    {
+      "selectedIconPath": "images/shouye_bh.png",
+      "iconPath": "images/shouye_bf.png",
+      "pagePath": "pages/TabBar/pages/index/index",
+      "text": "首页"  
+    },
+    {
+     "selectedIconPath": "images/quan_bh.png",
+     "iconPath": "images/quan_bf.png",
+     "pagePath": "pages/TabBar/pages/quan/quan",
+     "text": "圈子"  
+    },
+    {
+      "selectedIconPath": "images/my_bh.png",
+      "iconPath": "images/my_bf.png",
+      "pagePath": "pages/TabBar/pages/my/my",
+      "text": "我的"
+    }
+  ] 
+},
+
+
+  "subPakages":[{
+      "root": "pages/tools/",
+      "pages": [
+        "tools/pages/life_pay/life_pay"
+
+      ]
+  }
+  ],
+
+
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": false
+}
+

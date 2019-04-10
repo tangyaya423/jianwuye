@@ -1,0 +1,39 @@
+<!--quan.wxml-->
+<view class='quan_container'>
+  <view class='chuang' wx:for="{{user}}">
+    <view class='megssage'>
+      <image class='user_pic' src="{{item.user_pic}}"></image>
+      <text class='user_name'>{{item.name}}</text>
+      <text class='publish' bindtap='ToPublish'>发表圈子</text>
+    </view>
+    <image class='pic' src='/images/quan_bgp.png'></image>
+  </view>
+  <block wx:for="{{quan_data}}">
+    <view class='quan_box'>
+      <view class='message_1'>
+        <view class='message'>
+          <image class='mpic_1' src='{{item.pic}}'></image>
+          <text class='m_name'>{{item.name}}</text>
+        </view>
+        <text class='m_content'>{{item.content}}</text>
+        <!-- <block wx:for="{{mpic}}"> -->
+          <view class='m-pic'>
+            <image src='{{item.mpic}}'></image>
+          </view>
+        <!-- </block> -->
+        <view class='m_tools'>
+          <text class='time' wx:if="{{time}}">{{time}}</text>
+          <view class='before'>
+             <image wx:if="{{item.zanst==1}}" class='zan_pic' src='/images/zan.png' bindtap='select_zan' data-index='{{index}}'></image>
+            <image class='zans_pic' src='/images/zans.png' data-index='{{index}}' bindtap='select_zan' wx:else></image>
+          </view>
+          <view class='after'>
+             <image wx:if="{{item.like==1}}" class='like' src='/images/like.png' bindtap='select' data-index='{{index}}'></image>
+             <image class='likes' src='/images/likes.png'  data-index='{{index}}' bindtap='select' wx:else></image>
+          </view>
+          
+          </view>
+      </view>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,98 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='chuang'>
+  <image class='pic' src='http://img1.cache.netease.com/catchpic/4/41/41562C701E2205884A95FBE7EF74066D.jpg'></image>
+  </view>
+   <view class='tool'>
+    <view class='f_tool' style='margin:0 auto;padding:20rpx 0 20rpx 0;'>
+        <!-- <image class='pic1' src='/images/tool.jpg'></image>  -->
+        <text>常用功能</text> 
+   </view>
+   <block>
+      <view class='list_tool' wx:for="{{tooldata}}">
+          <view class='tool_top' bindtap='ToLifePay'>
+                <image class='tool_pic' src='{{item.pic}}'></image>
+                <text class='tool_name'>{{item.name}}</text>
+          </view>
+            <view class='tool_top'>
+                  <image class='tool_pic' src='{{item.pic1}}'></image>
+                  <text class='tool_name'>{{item.name1}}</text>
+            </view>
+            <view class='tool_top'>
+                  <image class='tool_pic' src='{{item.pic2}}'></image>
+                  <text class='tool_name'>{{item.name2}}</text>
+            </view>
+            <view class='tool_top'>
+                  <image class='tool_pic' src='{{item.pic3}}'></image>
+                  <text class='tool_name'>{{item.name3}}</text>
+            </view>
+            <view class='tool_top'>
+                  <image class='tool_pic' src='{{item.pic4}}'></image>
+                  <text class='tool_name'>{{item.name4}}</text>
+            </view> 
+            <!-- <view class='tool_top tool_bottom'  wx:for="{{tooldata5}}">
+                  <image class='tool_pic' src='{{item.pic}}'></image>
+                  <text class='tool_name'>{{item.name}}</text>
+            </view>
+            <view class='tool_top tool_bottom'  wx:for="{{tooldata6}}">
+                  <image class='tool_pic' src='{{item.pic}}'></image>
+                  <text class='tool_name'>{{item.name}}</text>
+            </view>
+            <view class='tool_top tool_bottom'  wx:for="{{tooldata7}}">
+                  <image class='tool_pic' src='{{item.pic}}'></image>
+                  <text class='tool_name'>{{item.name}}</text>
+            </view>
+            <view class='tool_top tool_bottom'  wx:for="{{tooldata8}}">
+                  <image class='tool_pic' src='{{item.pic}}'></image>
+                  <text class='tool_name'>{{item.name}}</text>
+            </view>
+            <view class='tool_top tool_bottom'  wx:for="{{tooldata9}}">
+                  <image class='tool_pic' src='{{item.pic}}'></image>
+                  <text class='tool_name'>{{item.name}}</text>
+            </view> -->
+      </view>
+   </block>
+     <view class='message'> 
+    </view>  
+   <view class='message_box'>
+        <view class='zixun'>
+              <view class='title'>
+                    <text class='word'>实时资讯</text>
+                    <!-- <image src='/images/news.png'></image> -->
+              </view>
+              <view class='fengexian'></view>
+              <view class='notice'>
+                    <image src='/images/hot.png'></image>
+                    <view class='notice_centent'  wx:for="{{notice}}">
+                          <text class='title1'>{{item.title1}}</text>
+                          <view class='content'>{{item.content}}</view>
+                    </view>
+                    <view class='notice_centent'  wx:for="{{notice1}}">
+                          <text class='title2'>{{item.title2}}</text>
+                          <view class='content'>{{item.content}}</view>
+                    </view>
+              </view>
+        </view>
+        <view class='quan'>
+             <view class='title'>
+                    <navigator url="../quan/quan" hover-class="navigator-hover"class='word' bindtap='Toquan'>社区圈子</navigator>
+                    <!-- <image class='quan_pic' src='/images/quan.png'></image> -->
+              </view>  
+              <view class='fengexian'></view>   
+              <view class='quan_message'>
+                    <image class='quan_pic1' src='/images/arrow.png'></image>
+                    <view class='quan_centent'  wx:for="{{quan}}">
+                          <view class='content1'>{{item.content}}</view>
+                          <image class='quan_pic2' src='{{item.quan_pic}}'></image>
+                         
+                    </view>
+                    <view class='share'>
+                           <image class='share0' style='margin-left:57%;' wx:for="{{share0}}" src='{{item.share_pic}}'></image>
+                          <image class='share1' style='margin-left:6%;' src='{{item.collect_pic}}'  wx:for="{{share1}}"></image>
+                          <image class='share2'  style='margin-left:6%;' src='{{item.comment_pic}}'  wx:for="{{share2}}"></image>
+                    </view>                
+              </view>   
+        </view>
+   </view>
+  </view> 
+</view>
